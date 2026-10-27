@@ -1,7 +1,7 @@
 import pygame
 import asyncio
 
-def main():
+async def main():
     pygame.init()
     W, H = 600, 400
     screen = pygame.display.set_mode((W, H))
@@ -87,5 +87,4 @@ def main():
     
     pygame.quit()
 
-if __name__ == '__main__':
-    main()
+asyncio.run(main())
